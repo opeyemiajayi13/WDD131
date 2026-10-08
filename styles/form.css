@@ -1,0 +1,222 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1edf2;
+    color: #222;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #35002f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* =========================
+   Form
+========================= */
+
+form {
+    background-color: #d9d3da;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    background-color: #35002f;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.optional {
+    color: #35002f;
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 1rem;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    outline: 3px solid #8d4a91;
+}
+
+/* =========================
+   Rating
+========================= */
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.rating label {
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.rating span {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.rating input {
+    display: block;
+    margin: 0.4rem auto;
+    width: auto;
+}
+
+/* =========================
+   Features
+========================= */
+
+.features label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: normal;
+    margin: 0.5rem 0;
+}
+
+.features input {
+    width: 20px;
+    height: 20px;
+}
+
+/* =========================
+   Submit Button
+========================= */
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: white;
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #35002f;
+    color: white;
+}
+
+/* =========================
+   Confirmation Page
+========================= */
+
+.confirmation {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.confirmation h2 {
+    color: #35002f;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #35002f;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #5a0751;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #35002f;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+/* =========================
+   Desktop
+========================= */
+
+@media screen and (min-width: 600px) {
+
+    main {
+        max-width: 700px;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+}
