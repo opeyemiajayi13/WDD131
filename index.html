@@ -3,172 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Product Review Form for WDD 131">
-    <meta name="author" content="Your Name">
-    <title>Product Review Form</title>
-    <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
-    <style>
-body {
-    background-color: #f1edf2;
-}
-
-header {
-    background-color: #35002f;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-form {
-    background-color: #d9d3da;
-    padding: 30px;
-}
-</style>
+    <title>My Website</title>
 </head>
-
 <body>
+
     <header>
-        <h1>Product Review</h1>
+        <h1>My Website</h1>
+
+        <nav>
+            <a href="form.html">form</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
     <main>
-        <form method="get" action="review.html">
-
-            <fieldset>
-                <legend>Product Review Form</legend>
-
-                <!-- Product Name -->
-                <label for="productName">Product Name</label>
-                <select id="productName" name="productName" required>
-                    <option value="" disabled selected>
-                        Select a Product ...
-                    </option>
-                </select>
-
-                <!-- Overall Rating -->
-                <label>Overall Rating</label>
-                <div class="rating">
-                    <label for="rating1">
-                        <span>☆</span>
-                        <input type="radio" id="rating1" name="rating" value="1" required>
-                    </label>
-
-                    <label for="rating2">
-                        <span>☆☆</span>
-                        <input type="radio" id="rating2" name="rating" value="2" required>
-                    </label>
-
-                    <label for="rating3">
-                        <span>☆☆☆</span>
-                        <input type="radio" id="rating3" name="rating" value="3" required>
-                    </label>
-
-                    <label for="rating4">
-                        <span>☆☆☆☆</span>
-                        <input type="radio" id="rating4" name="rating" value="4" required>
-                    </label>
-
-                    <label for="rating5">
-                        <span>☆☆☆☆☆</span>
-                        <input type="radio" id="rating5" name="rating" value="5" required>
-                    </label>
-                </div>
-
-                <!-- Date of Installation -->
-                <label for="installationDate">Date of Installation</label>
-                <input
-                    type="date"
-                    id="installationDate"
-                    name="installationDate"
-                    required
-                >
-
-                <!-- Useful Features -->
-                <label>Which features did you find useful in the product?</label>
-                <em>(Check all that apply)</em>
-
-                <div class="features">
-                    <label for="durability">
-                        <input
-                            type="checkbox"
-                            id="durability"
-                            name="features"
-                            value="Durability"
-                        >
-                        Durability
-                    </label>
-
-                    <label for="easeOfUse">
-                        <input
-                            type="checkbox"
-                            id="easeOfUse"
-                            name="features"
-                            value="Ease of Use"
-                        >
-                        Ease of Use
-                    </label>
-
-                    <label for="performance">
-                        <input
-                            type="checkbox"
-                            id="performance"
-                            name="features"
-                            value="Performance"
-                        >
-                        Performance
-                    </label>
-
-                    <label for="design">
-                        <input
-                            type="checkbox"
-                            id="design"
-                            name="features"
-                            value="Design"
-                        >
-                        Design
-                    </label>
-                </div>
-
-                <!-- Written Review -->
-                <label for="writtenReview">
-                    Written Review
-                    <span class="optional">(Optional)</span>
-                </label>
-
-                <textarea
-                    id="writtenReview"
-                    name="writtenReview"
-                    rows="6"
-                ></textarea>
-
-                <!-- User Name -->
-                <label for="userName">
-                    Your Name
-                    <span class="optional">(Optional)</span>
-                </label>
-
-                <input
-                    type="text"
-                    id="userName"
-                    name="userName"
-                >
-
-                <!-- Submit -->
-                <input type="submit" value="Post Review">
-
-            </fieldset>
-        </form>
+        <h2>Welcome to My Website</h2>
+        <p>Use the links above to visit the different pages.</p>
     </main>
 
     <footer>
-        <p>
-            &copy; 2026 | WDD 131 Product Review Form
-        </p>
-        <p>
-            Last Modification:
-            <span id="lastModified"></span>
-        </p>
+        <p>&copy; 2026 My Website</p>
     </footer>
+
 </body>
 </html>
