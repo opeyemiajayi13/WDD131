@@ -1,0 +1,372 @@
+/* ========================================
+CHURCH COMMUNITY WEBSITE
+WDD 131 WEEK 06 PROJECT
+======================================== */
+
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+:root {
+--primary-color: #123b65;
+--secondary-color: #1f5b91;
+--accent-color: #d4af37;
+--background-color: #f5f8fc;
+--white-color: #ffffff;
+--text-color: #263238;
+--border-color: #d9e2ec;
+}
+
+/* GENERAL STYLES */
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.7;
+color: var(--text-color);
+background-color: var(--background-color);
+}
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+a {
+color: var(--secondary-color);
+}
+
+a:hover {
+color: var(--primary-color);
+}
+
+button,
+input,
+select,
+textarea {
+font: inherit;
+}
+
+button {
+cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+background-color: var(--primary-color);
+color: var(--white-color);
+padding: 1.25rem 5%;
+border-bottom: 4px solid var(--accent-color);
+}
+
+header h1 {
+font-size: 1.8rem;
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.site-name {
+display: block;
+color: var(--white-color);
+text-align: center;
+text-decoration: none;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+.site-name:hover {
+color: var(--accent-color);
+}
+
+/* NAVIGATION */
+
+nav ul {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 0.75rem;
+list-style: none;
+}
+
+nav a {
+display: block;
+color: var(--white-color);
+text-decoration: none;
+padding: 0.5rem 0.85rem;
+border-radius: 4px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+background-color: var(--accent-color);
+color: #17212b;
+}
+
+/* MAIN CONTENT */
+
+main {
+width: min(1100px, 92%);
+margin: 2rem auto;
+}
+
+h1,
+h2,
+h3 {
+color: var(--primary-color);
+line-height: 1.3;
+}
+
+h1 {
+margin-bottom: 1rem;
+}
+
+h2 {
+margin-bottom: 0.75rem;
+}
+
+p {
+margin-bottom: 1rem;
+}
+
+/* SECTIONS AND CARDS */
+
+section {
+margin-bottom: 2rem;
+}
+
+.card {
+background-color: var(--white-color);
+padding: 1.5rem;
+margin-bottom: 1.25rem;
+border: 1px solid var(--border-color);
+border-radius: 10px;
+box-shadow: 0 3px 10px rgb(0 0 0 / 7%);
+}
+
+.card h2,
+.card h3 {
+margin-bottom: 0.75rem;
+}
+
+.card img {
+width: 100%;
+border-radius: 6px;
+margin-bottom: 1rem;
+}
+
+/* BUTTONS AND LINKS */
+
+.button,
+button {
+display: inline-block;
+background-color: var(--primary-color);
+color: var(--white-color);
+padding: 0.75rem 1.2rem;
+border: 2px solid var(--primary-color);
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.button:hover,
+button:hover {
+background-color: var(--accent-color);
+border-color: var(--accent-color);
+color: #17212b;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+outline: 3px solid var(--accent-color);
+outline-offset: 3px;
+}
+
+/* EVENTS */
+
+#activity-list,
+#upcoming-activities {
+display: grid;
+grid-template-columns: 1fr;
+gap: 1rem;
+}
+
+.event-card {
+background-color: var(--white-color);
+border-left: 5px solid var(--accent-color);
+border-radius: 6px;
+padding: 1.25rem;
+box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+}
+
+.event-card h2,
+.event-card h3 {
+margin-bottom: 0.5rem;
+}
+
+.event-category {
+display: inline-block;
+background-color: #e5eef8;
+color: #123b65;
+padding: 0.2rem 0.6rem;
+border-radius: 4px;
+margin-bottom: 0.5rem;
+font-size: 0.9rem;
+}
+
+/* FORMS */
+
+form {
+background-color: var(--white-color);
+padding: 1.5rem;
+border: 1px solid var(--border-color);
+border-radius: 10px;
+}
+
+form div {
+margin-bottom: 1.25rem;
+}
+
+label {
+display: block;
+font-weight: bold;
+margin-bottom: 0.4rem;
+}
+
+input,
+select,
+textarea {
+width: 100%;
+padding: 0.75rem;
+border: 1px solid #8293a5;
+border-radius: 5px;
+background-color: var(--white-color);
+color: var(--text-color);
+}
+
+textarea {
+resize: vertical;
+}
+
+#form-feedback {
+margin-top: 1rem;
+font-weight: bold;
+}
+
+.success-message {
+color: #176b35;
+}
+
+.error-message {
+color: #a32020;
+}
+
+/* FOOTER */
+
+footer {
+background-color: var(--primary-color);
+color: var(--white-color);
+text-align: center;
+padding: 1.5rem;
+margin-top: 3rem;
+}
+
+footer p {
+margin-bottom: 0.5rem;
+}
+
+footer a {
+color: var(--white-color);
+}
+
+footer a:hover {
+color: var(--accent-color);
+}
+
+/* REFERENCES PAGE */
+
+.references-list {
+padding-left: 1.5rem;
+}
+
+.references-list li {
+margin-bottom: 0.75rem;
+}
+
+/* RESPONSIVE DESIGN: TABLETS AND COMPUTERS */
+
+@media screen and (min-width: 650px) {
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1.5rem;
+}
+
+header h1 {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.site-name {
+    text-align: left;
+}
+
+nav ul {
+    gap: 1rem;
+}
+
+#activity-list,
+#upcoming-activities {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+}
+
+/* RESPONSIVE DESIGN: LARGE SCREENS */
+
+@media screen and (min-width: 950px) {
+main {
+margin-top: 3rem;
+margin-bottom: 3rem;
+}
+
+#activity-list,
+#upcoming-activities {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+form {
+    max-width: 750px;
+}
+
+}
+
+/* REDUCED MOTION ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+*,
+*::before,
+*::after {
+scroll-behavior: auto !important;
+animation-duration: 0.01ms !important;
+transition-duration: 0.01ms !important;
+}
+}

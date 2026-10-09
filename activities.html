@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our church activities, services, and community events.">
+    <title>Activities | Church Website</title><link rel="stylesheet" href="styles/site.css">
+<script src="scripts/main.js" defer></script>
+
+</head><body>
+    <header>
+        <a href="index.html" class="site-name">Our Church</a>    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html" aria-current="page">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Our Activities</h1>
+
+    <section>
+        <h2>Church Services</h2>
+        <p>
+            Learn about our worship services and opportunities
+            to participate in the church community.
+        </p>
+    </section>
+
+    <section>
+        <h2>Community Activities</h2>
+        <p>
+            Discover opportunities to serve others,
+            build relationships, and participate in events.
+        </p>
+    </section>
+
+    <section>
+        <h2>Explore Activities</h2>
+        <button id="show-activities" type="button">
+            Show Activities
+        </button>
+
+        <div id="activity-list" aria-live="polite"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> Our Church</p>
+    <a href="references.html">References</a>
+</footer>
+
+</body>
+</html>

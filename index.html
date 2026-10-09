@@ -1,32 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-</head>
-<body>
+    <meta name="description" content="Learn about our church, community, activities, and upcoming events.">
+    <meta name="author" content="Your Name">
+    <title>Home | Church Website</title><link rel="stylesheet" href="styles/site.css">
+<script src="scripts/main.js" defer></script>
 
+</head><body>
     <header>
-        <h1>My Website</h1>
+        <a href="index.html" class="site-name">Our Church</a>    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <nav>
-            <a href="form.html">form</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<main>
+    <h1>Welcome to Our Church</h1>
 
-    <main>
-        <h2>Welcome to My Website</h2>
-        <p>Use the links above to visit the different pages.</p>
-    </main>
+    <section>
+        <h2>A Place to Grow Together</h2>
+        <p>
+            Discover our community, learn about our activities,
+            and find opportunities to participate.
+        </p>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 My Website</p>
-    </footer>
+    <section>
+        <h2>Upcoming Activities</h2>
+        <div id="upcoming-activities">
+            <p>Explore our activities to learn more about upcoming events.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; <span id="current-year"></span> Our Church</p>
+    <a href="references.html">References</a>
+</footer>
 
 </body>
 </html>
